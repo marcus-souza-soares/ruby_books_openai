@@ -1,4 +1,3 @@
-require './lib/travel'
 require './lib/recomendations'
 
 recomendations = Recomendations.new

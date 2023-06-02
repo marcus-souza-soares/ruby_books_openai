@@ -1,10 +1,10 @@
 module Utils
   class BooksPrompt
     def self.categories_prompt(costumer, customer_categories, customer_age)
-      "Ola, meu nome eh #{costumer}. "\
-      "Me forneca uma lista com 10 livros sabendo que tenho "\
-      "#{customer_age} anos, tenho preferencia nessas categorias "\
-      "#{customer_categories}. E os livros devem estar contidos nessa lista: #{BooksList.books_list}"
+      "Hi, my name is #{costumer}. "\
+      "suggest me 10 books. "\
+      "I'm #{customer_age} years old and I have preference on this categories: "\
+      "#{customer_categories}. The books should be on this list: #{BooksList.books_list}"
     end
   end
 

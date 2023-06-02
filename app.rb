@@ -1,5 +1,4 @@
 require 'sinatra'
-require './lib/travel'
 require './lib/recomendations'
 
 set :views, './views'
@@ -11,5 +10,5 @@ get '/recomendations' do
                         .categories(["action", "adventure", "drama"])
                         .call
 
-  erb :recomendations, locals: { recomendations: recomendations }
+  erb :recomendations, locals: { recomendations: recomendations.split("\n") }
 end
